@@ -5,6 +5,9 @@ import GameDetails from './GameDetails';
 import GameModal from './GameModal'; // Importe o novo componente
 import Modal from './Modal';
 import './App.css'; // Importe o arquivo de estilos da aplicação
+import './index.css'; // Importe o arquivo de estilos da aplicação
+
+import nbaLogo from './pngimg.com - nba_PNG22.png'; // Importe o logo SVG
 
 
 
@@ -43,8 +46,9 @@ function App() {
 
   return (
     <div className="App">
-      <header className="header">
-        <h1 className="title">Jogos da NBA</h1>
+       <header className="header">
+        <img src={nbaLogo} alt="NBA Logo" className="header-logo" />
+       
       </header>
       <div className="game-list">
         {games.map(game => (
