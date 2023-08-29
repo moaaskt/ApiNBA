@@ -1,20 +1,42 @@
 /* src/App.css */
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('/public/Nba\ Logo\ Wallpapers.jpg'); /* Substitua pelo caminho correto da sua imagem */
+  background-size: cover;
+  background-position: center;
+  font-family: 'Arial', sans-serif;
+}
+
+
+
 .App {
   font-family: 'Arial', sans-serif;
   text-align: center;
   padding: 20px;
+  background-image: url();
 }
 
 .header {
   background-color: #FF3E00;
   color: white;
   padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.header-logo {
+  width: 80px; /* Ajuste o tamanho do logo conforme necessário */
+  height: auto;
+  margin-right: 20px; /* Adicione um espaço entre o logo e o título */
 }
 
 .title {
   margin: 0;
 }
-
 .game-list {
   list-style: none;
   padding: 0;
@@ -28,14 +50,17 @@
   border-radius: 10px;
   overflow: hidden; /* Para aplicar as bordas arredondadas corretamente */
   background-color: white;
+  background-image: url(/public/Top\ NBA\ Wallpapers\ NBA\ Logo\ Wallpapers.jpg);
+  background-size: cover;
+  background-position: center;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease-in-out;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 20px;
+  padding: 30px;
   cursor: pointer;
-  margin-bottom: 20px;
+
 }
 
 .game-card:hover {
@@ -45,6 +70,9 @@
 .team-names {
   font-weight: bold;
   font-size: 1.2rem;
+  margin-top: auto;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.068);
 }
 
 .game-date {
