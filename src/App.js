@@ -44,11 +44,11 @@ function App() {
     setIsModalOpen(false);
   };
 
+ 
   return (
     <div className="App">
-       <header className="header">
+      <header className="header">
         <img src={nbaLogo} alt="NBA Logo" className="header-logo" />
-       
       </header>
       <div className="game-list">
         {games.map(game => (
@@ -58,7 +58,9 @@ function App() {
             className="game-card"
           >
             <p className="team-names">
-              {game.home_team.full_name} vs {game.visitor_team.full_name}
+              <span className="home-team">{game.home_team.full_name}</span>
+              <span className="vs">vs</span>
+              <span className="visitor-team">{game.visitor_team.full_name}</span>
             </p>
             <p className="game-date">{game.date}</p>
           </div>

@@ -68,14 +68,57 @@ body {
 }
 
 .team-names {
+  font-family: 'Bebas Neue';
   font-weight: bold;
   font-size: 1.2rem;
   margin-top: auto;
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.068);
+  display: contents;
+  justify-content: space-between;
+  align-items: center;
+}
+.home-team,
+.visitor-team {
+  font-weight: bold;
+  font-size: 36px;
+}
+.vs {
+  margin: 0 10px;
+  font-size: 33px;
+  color: #fffbfb;
 }
 
 .game-date {
-  font-size: 0.9rem;
-  color: #666;
+  color: #111010; /* Altere a cor conforme desejado */
+  font-size: 17px; /* Altere o tamanho da fonte conforme desejado */
+  font-weight: bold; /* Altere o peso da fonte conforme desejado */
+  background-color: #fdfafa2f;
+  display: inline-block; /* Torna o elemento em linha e ajusta ao tamanho do conteúdo */
+  padding: 5px 10px; /* Adicione algum espaço interno para o fundo não ficar colado ao texto */
+  
+  
+}
+.modal-content {
+  font-family: 'Roboto', sans-serif; /* Use a fonte escolhida */
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.modal-content .game-date{
+  color: #ca4a1f;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.game-teams {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.game-details {
+  margin-top: 10px;
 }
